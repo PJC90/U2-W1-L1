@@ -2,8 +2,7 @@
 html {font-size: 62.5%;}
 body { 
     font-family: Poppins, 'Helvetica Neue', sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.6;
     padding: 15px;
     background-image: url('../img/sfondo.png');
     background-position: center center;
@@ -189,7 +188,11 @@ footer a {
 }
 
 /* Responsive */
-
+@media screen and (max-width: 500px){
+    p,ul,ol{
+        font-size: 2rem;
+    }
+}
 @media screen and (min-width: 500px){
     body{
          font-size: 1.5em;
@@ -214,16 +217,6 @@ footer a {
         margin-right: 10%;
     }
    
-    header {
-        display: flex;
-        padding: 5px;
-    }
-    header div img{
-       margin: 0;
-    }
-    header div p{
-        display: inline;
-    }
     
     main article{
         margin-left: 4%;
@@ -240,4 +233,45 @@ footer a {
         max-width: 5%;
        
     }
+}
+@media screen and (min-width: 1200px){
+    main {
+        max-width: 1000px;
+        
+    }
+    
+    header {
+        display: flex;
+        padding: 5px;
+    }
+    header div img{
+       margin: 0;
+    }
+    header div p{
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+    aside div {
+        display: inline-block;
+        width: 33%;
+        margin: -2px;
+    }
+    
+iframe, section{
+    width: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-inline: -2px;
+    vertical-align: middle;
+}
+section{
+    border-radius: 20px;
+}
+iframe{
+    height: 200px;
+}
+
+
 }
